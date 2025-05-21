@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Daily Planner</h1>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search tasks..." />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+      </header>
+
+      <main>
+        <section class="task-form">
+          <h2>Add New Task</h2>
+          <form id="task-form">
+            <div class="form-group">
+              <label for="task-title">Task Title</label>
+              <input type="text" id="task-title" required />
+            </div>
+            <div class="form-group">
+              <label for="task-description">Description (Optional)</label>
+              <textarea id="task-description"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="task-category">Category</label>
+              <select id="task-category">
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="study">Study</option>
+                <option value="health">Health</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="task-priority">Priority</label>
+              <select id="task-priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-primary">Add Task</button>
+          </form>
+        </section>
+
+        <section class="task-list">
+          <h2>Today's Tasks</h2>
+          <div class="task-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="work">Work</button>
+            <button class="filter-btn" data-filter="personal">Personal</button>
+            <button class="filter-btn" data-filter="study">Study</button>
+            <button class="filter-btn" data-filter="health">Health</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+          </div>
+          <div id="tasks-container">
+            <!-- Tasks will be added here dynamically -->
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>Daily Planner &copy; 2023</p>
+      </footer>
+    </div>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Task template -->
+    <template id="task-template">
+      <div class="task-item">
+        <div class="task-header">
+          <h3 class="task-title"></h3>
+          <div class="task-category"></div>
+          <div class="task-priority"></div>
+        </div>
+        <p class="task-description"></p>
+        <div class="task-actions">
+          <button class="btn-complete">
+            <i class="fas fa-check"></i> Complete
+          </button>
+          <button class="btn-delete">
+            <i class="fas fa-trash"></i> Delete
+          </button>
+        </div>
+      </div>
+    </template>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
