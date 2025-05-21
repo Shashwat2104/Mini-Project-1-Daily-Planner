@@ -1,26 +1,9 @@
-
-
-
-          
-Let me check the current content of the README.md file before creating a detailed version.
-        
-            
-toolName: view_files
-            
-status: success
-          
-            
-filePath: c:\Users\atul7\OneDrive\Desktop\Career Prep Plan\Mini Project 1 Daily Planner\README.md
-          
 # 📝 Daily Planner Web Application
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 📖 Overview
 A modern, feature-rich daily planner web application built with vanilla JavaScript, HTML, and CSS. This application helps users organize their daily tasks efficiently with a clean and intuitive interface.
-
-![Daily Planner Demo](https://raw.githubusercontent.com/username/daily-planner/main/demo.gif)
-*(Note: Replace the demo image URL with your actual screenshot/GIF)*
 
 ## ✨ Features
 
@@ -63,7 +46,7 @@ A modern, feature-rich daily planner web application built with vanilla JavaScri
 ### Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/daily-planner.git
+git clone https://github.com/Shashwat2104/Mini-Project-1-Daily-Planner
 ```
 
 2. Navigate to the project directory:
@@ -116,9 +99,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Color palette inspiration from [Coolors](https://coolors.co)
 
 ## 📞 Contact
-Your Name - [@Shashwat](https://twitter.com/yourusername)
+Your Name - [@Shashwat](https://www.linkedin.com/in/shashwat-mahendra-214598163/)
 
-Project Link: [https://github.com/yourusername/daily-planner](https://github.com/yourusername/daily-planner)
+Project Link: [https://github.com/yourusername/daily-planner](https://github.com/Shashwat2104/Mini-Project-1-Daily-Planner)
 
 ---
 ⭐️ If you found this project helpful, please give it a star!
